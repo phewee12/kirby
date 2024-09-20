@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>3D Character</title>
+    <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+    <script src="https://unpkg.com/aframe-extras@6.1.1/dist/aframe-extras.min.js"></script>
+
+  </head>
+  <body>
+    <a-scene>
+
+      <!-- Character body -->
+      <a-sphere position="0 1.25 -5" radius="1" color="#FFA4CC"></a-sphere>
+      
+      <!-- Eyes -->
+      <a-sphere position="-0.3 1.6 -4.2" radius="0.14" color="#000" scale = "0.7 2 1"></a-sphere>
+      <a-sphere position="0.3 1.6 -4.2" radius="0.14" color="#000" scale = "0.7 2 1"></a-sphere>
+
+      <a-sphere position="-0.3 1.8 -4.1" radius="0.05" color="#FFFFFF" scale = "0.7 1 1"></a-sphere>
+      <a-sphere position="0.3 1.8 -4.1" radius="0.05" color="#FFFFFF" sclae = "0.7 1 1"></a-sphere>
+      
+      <!-- Cheeks -->
+      <a-sphere position="-0.5 1.35 -4.2" radius="0.15" color="#FF69B4"></a-sphere>
+      <a-sphere position="0.5 1.35 -4.2" radius="0.15" color="#FF69B4"></a-sphere>
+      
+      <!-- Mouth -->
+      <a-sphere color="#CA2E46" height="0.07" radius="0.3" position="-0.03 1.2 -4.25" scale="0.7 0.55 1"></a-sphere>
+
+      <!-- Arms -->
+      <a-sphere position="-1 1.25 -5" radius="0.4" color="#FFA4CC"></a-sphere>
+      <a-sphere position="1 1.25 -5" radius="0.4" color="#FFA4CC"></a-sphere>
+      
+      <!-- Feet -->
+      <a-sphere position="-0.5 0.5 -5" radius="0.4" color="#F03056" scale=" 1 1.4 1"></a-sphere>
+      <a-sphere position="0.5 0.5 -5" radius="0.4" color="#F03056" scale ="1 1.4 1"></a-sphere>
+      
+      <!-- Spoon -->
+      <a-box position="2 -0.2 -5.5" width="8" height="0.1" depth="0.2" color="#8A8A8A"></a-box>
+      <a-sphere position="0 -0.2 -5.5" radius=".7" color="#8A8A8A" scale = "3 0.2 2"></a-sphere>
+
+      <!-- Whipped Cream -->
+      <a-sphere position="0 2.2 -5" radius="0.3" color="#F2ECDC" scale="1.2 0.8 1.2"></a-sphere>
+      <a-sphere position="0.1 2.3 -5" radius="0.2" color="#F2ECDC" scale="1.2 0.8 1.2"></a-sphere>
+      <a-sphere position="-0.1 2.3 -5" radius="0.2" color="#F2ECDC" scale="1.2 0.8 1.2"></a-sphere>
+      <a-sphere position="0 2.4 -5" radius="0.15" color="#F2ECDC" scale="1.2 0.8 1.2"></a-sphere>
+
+    <a-sky color="#87CEEB"></a-sky>
+
+      <!-- Cloud 1 (left) -->
+      <a-entity position="-10 4 -15">
+    <a-sphere color="#FFF" radius="1.2" position="0 0 0"></a-sphere>
+    <a-sphere color="#FFF" radius="0.9" position="1.5 0 0"></a-sphere>
+    <a-sphere color="#FFF" radius="1.1" position="-1.5 0.3 0"></a-sphere>
+    <a-sphere color="#FFF" radius="0.7" position="0.5 0.5 -0.5"></a-sphere>
+    <a-sphere color="#FFF" radius="0.6" position="-0.7 -0.3 0.5"></a-sphere>
+    </a-entity>
+      
+      <!-- Cloud 2 (center) -->
+      <a-entity position="0 6 -20">
+      <a-sphere color="#FFF" radius="1.5" position="0 0 0"></a-sphere>
+      <a-sphere color="#FFF" radius="1.0" position="1.7 0.3 0"></a-sphere>
+      <a-sphere color="#FFF" radius="0.8" position="-1.7 -0.5 0.3"></a-sphere>
+      <a-sphere color="#FFF" radius="0.7" position="0.9 0.7 -0.5"></a-sphere>
+      <a-sphere color="#FFF" radius="0.6" position="0.5 -0.5 0.8"></a-sphere>
+      </a-entity>
+      
+      <!-- Cloud 3 (right) -->
+      <a-entity position="10 5 -25">
+      <a-sphere color="#FFF" radius="1.3" position="0 0 0"></a-sphere>
+      <a-sphere color="#FFF" radius="1.1" position="-1.5 0.2 -0.2"></a-sphere>
+      <a-sphere color="#FFF" radius="0.9" position="1.5 0.5 0"></a-sphere>
+      <a-sphere color="#FFF" radius="0.7" position="0.7 -0.3 0.5"></a-sphere>
+      <a-sphere color="#FFF" radius="0.6" position="-0.8 0.4 -0.6"></a-sphere>
+      </a-entity>
+      
+      <!-- Cloud 4 (far right) -->
+      <a-entity position="15 7 -20">
+      <a-sphere color="#FFF" radius="1.8" position="0 0 0"></a-sphere>
+      <a-sphere color="#FFF" radius="1.2" position="2 0 0"></a-sphere>
+      <a-sphere color="#FFF" radius="0.9" position="-2 0.3 0"></a-sphere>
+      <a-sphere color="#FFF" radius="0.7" position="1 0.5 -0.5"></a-sphere>
+      <a-sphere color="#FFF" radius="0.6" position="-1 -0.3 0.5"></a-sphere>
+      </a-entity>
+      
+      <a-entity
+        geometry="primitive: star; points: 5; outerRadius: 1; innerRadius: 0.5"
+        material="color: #FFD700"
+        position="0 2 -5">
+      </a-entity>
+      
+      <a-sky color="#87CEEB"></a-sky>
+
+
+    </a-scene>
+  </body>
+</html>
+
